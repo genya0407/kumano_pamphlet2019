@@ -1,0 +1,113 @@
+\contentsline {chapter}{\numberline {第1章}入寮にあたって}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}熊野寮概要}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}基本データ}{2}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}建物概略}{2}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}共同設備}{3}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}募集要項}{4}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}募集対象}{4}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}募集人数}{4}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}選考}{4}{subsection.1.2.3}
+\contentsline {subsubsection}{前$ \cdot $ 後期枠の区別と定員配分}{4}{subsubsection*.2}
+\contentsline {subsection}{\numberline {1.2.4}出願書類}{5}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}面接}{5}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}選考後の流れ}{6}{subsection.1.2.6}
+\contentsline {subsection}{\numberline {1.2.7}入寮手続き}{6}{subsection.1.2.7}
+\contentsline {subsubsection}{受付日}{6}{subsubsection*.3}
+\contentsline {subsubsection}{入寮オリエンテーション}{6}{subsubsection*.4}
+\contentsline {chapter}{\numberline {第2章}寮での生活}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}寮食堂と寮生}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}寮食は栄養満点! }{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}寮食は安全安心! }{7}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}寮食は安い!}{7}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}寮食堂は交流の場}{7}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}寮食メニュー例}{8}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}音楽室}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}イベントカレンダー}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}はじめに}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}イベントってなあに? }{10}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}くまのまつり ---春の地域祭り}{12}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}くまのまつりとは}{12}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}くまのまつりを行う意味}{12}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}熊野寮祭 ---厳冬の奇祭}{14}{section.2.5}
+\contentsline {subsubsection}{弁明}{14}{subsubsection*.5}
+\contentsline {subsubsection}{自治と自由とそれからあなた, みんなとがってみんないい}{14}{subsubsection*.6}
+\contentsline {chapter}{\numberline {第3章}寮と大学と自治}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}自治とは何か}{15}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}大学自治という基本精神}{15}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}自治のすばらしさ}{15}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}寮自治の根源}{16}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}大学当局との確約$ \cdot $ 団体交渉}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}確約}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}「対等」な話し合い}{17}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}確約の引き継ぎ}{17}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}団体交渉}{17}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}厨房労働者の雇用形態と人件費負担について}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}「受益者負担の原則」とそれを否定する熊野寮の立場}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}食堂運営会とは}{20}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}ガサにまつわる大学と寮自治会の立場}{21}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}捜索の原因}{21}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}寮生とともに大学当局も抗議する}{22}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}ガサについて抗議すべき点}{22}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}捜索自体の不当性について}{22}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}現場での不当行為について}{22}{subsection.3.5.2}
+\contentsline {subsubsection}{過剰警備}{22}{subsubsection*.7}
+\contentsline {subsubsection}{令状の不提示}{22}{subsubsection*.8}
+\contentsline {subsubsection}{警察手帳不提示}{22}{subsubsection*.9}
+\contentsline {subsubsection}{無関係な寮生の撮影}{23}{subsubsection*.10}
+\contentsline {chapter}{\numberline {第4章}寮生の生態}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}寮生の1日}{24}{section.4.1}
+\contentsline {subsubsection}{文学部2回生S}{24}{subsubsection*.11}
+\contentsline {subsubsection}{医学部人間健康科学科1回生M}{24}{subsubsection*.12}
+\contentsline {subsubsection}{工学研究科原子核工学専攻1回生M}{24}{subsubsection*.13}
+\contentsline {section}{\numberline {4.2}座談会コーナー}{25}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}1回生座談会}{25}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}大学生活を送る上でちょっと考えてほしいこと}{30}{subsection.4.2.2}
+\contentsline {chapter}{\numberline {第5章}寮生の声}{32}{chapter.5}
+\contentsline {section}{\numberline {5.1}寮食と寮生活}{32}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}寮食 $ \simeq $ 実家のご飯}{32}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}コスパNo.1}{32}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}普通にうまい}{32}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}生協食堂との比較}{32}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}食堂は第二の談話室}{33}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}おすすめの寮生活}{33}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}自画自賛タイム}{33}{subsection.5.1.7}
+\contentsline {section}{\numberline {5.2}$<陳謝>$ タイトル思いつきませんでした}{33}{section.5.2}
+\contentsline {section}{\numberline {5.3}このパンフのあれこれ}{34}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}はじめに}{34}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}パンフの作り方}{34}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}終わりに}{35}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}元寮生の声 ---寮生活を振り返って}{35}{section.5.4}
+\contentsline {section}{\numberline {5.5}転学部$ < 並びに留年 \cdot 休学 > $ のすすめ}{36}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}前書き}{36}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}本編}{36}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}おまけ}{36}{subsection.5.5.3}
+\contentsline {section}{\numberline {5.6}B3どきどき$ \star $ ディアスポラ! }{37}{section.5.6}
+\contentsline {section}{\numberline {5.7}ミール奴隷解放宣言 ! !}{38}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}ミール奴隷とは...}{38}{subsection.5.7.1}
+\contentsline {section}{\numberline {5.8}熊野寮で始める１カ月5万円生活}{38}{section.5.8}
+\contentsline {subsubsection}{終わりに: 安アパートとしての熊野寮}{39}{subsubsection*.14}
+\contentsline {section}{\numberline {5.9}寮議論で現れがちな論者KUMANaverまとめ}{39}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}まえがき}{39}{subsection.5.9.1}
+\contentsline {subsection}{\numberline {5.9.2}---熊野寮内のとある議論の記録}{40}{subsection.5.9.2}
+\contentsline {subsection}{\numberline {5.9.3}論者$ \cdot $ 主張タイプの分類まとめ}{42}{subsection.5.9.3}
+\contentsline {subsubsection}{第一章: 議論の方法論による分類}{42}{subsubsection*.15}
+\contentsline {subsubsection}{第二章: 主張の根拠による分類}{43}{subsubsection*.16}
+\contentsline {subsubsection}{第三章: 発言内容$ \cdot $ 意図による分類}{44}{subsubsection*.17}
+\contentsline {subsection}{\numberline {5.9.4}あとがき}{45}{subsection.5.9.4}
+\contentsline {chapter}{\numberline {第6章}寮生の声 ---過去の傑作選}{46}{chapter.6}
+\contentsline {subsection}{\numberline {6.0.1}おサルのはなし}{46}{subsection.6.0.1}
+\contentsline {subsection}{\numberline {6.0.2}ベルギー人Aの雑記}{46}{subsection.6.0.2}
+\contentsline {subsection}{\numberline {6.0.3}熊野寮, やべえよやべえよ}{47}{subsection.6.0.3}
+\contentsline {subsubsection}{自治寮を防衛にゃん! }{47}{subsubsection*.18}
+\contentsline {subsubsection}{団交をやめる. ボス交にする}{47}{subsubsection*.19}
+\contentsline {subsubsection}{確約を変える}{47}{subsubsection*.20}
+\contentsline {subsubsection}{入退寮権を剥奪する}{48}{subsubsection*.21}
+\contentsline {subsubsection}{外注化$ \cdot $ 非正規職化を進める}{48}{subsubsection*.22}
+\contentsline {subsection}{\numberline {6.0.4}ある自称: 一般女子寮生の声}{48}{subsection.6.0.4}
+\contentsline {subsection}{\numberline {6.0.5}受験生へ宛てて}{49}{subsection.6.0.5}
+\contentsline {subsection}{\numberline {6.0.6}おすすめの下宿先熊野寮}{50}{subsection.6.0.6}
+\contentsline {subsection}{\numberline {6.0.7}談話室について}{50}{subsection.6.0.7}
+\contentsline {chapter}{\numberline {第7章}FAQ -- 熊野寮生だけど質問ある?}{52}{chapter.7}
+\contentsline {subsection}{\numberline {7.0.1}入寮関連}{52}{subsection.7.0.1}
+\contentsline {subsection}{\numberline {7.0.2}生活関連}{53}{subsection.7.0.2}
+\contentsline {subsection}{\numberline {7.0.3}人間関係など}{54}{subsection.7.0.3}
