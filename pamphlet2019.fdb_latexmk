@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1549918000 "pamphlet2019.dvi" "pamphlet2019.pdf" "pamphlet2019" 1549918003
-  "pamphlet2019.dvi" 1549918000 432408 1ff2563f9effd8c6d8b8c73b2e5c46e1 "latex"
+["dvipdf"] 1549918090 "pamphlet2019.dvi" "pamphlet2019.pdf" "pamphlet2019" 1549918093
+  "pamphlet2019.dvi" 1549918090 432316 0a207b6389b43a906d2e3df917b75751 "latex"
   (generated)
   "pamphlet2019.pdf"
-["latex"] 1549917995 "pamphlet2019.tex" "pamphlet2019.dvi" "pamphlet2019" 1549918003
+["latex"] 1549918082 "pamphlet2019.tex" "pamphlet2019.dvi" "pamphlet2019" 1549918093
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/ptex-fonts/ascgrp/ascgrp.tfm" 1480098698 448 9a1f3a95c3a7e2681aa6eefcf410b7ac ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1480098698 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -203,24 +203,22 @@
   "extractbb -O kumano_fes2.pdf" 0 -1 0 ""
   "extractbb -O muc.pdf" 0 -1 0 ""
   "extractbb -O shitumon.pdf" 0 -1 0 ""
-  "extractbb -O terrace.pdf" 0 -1 0 ""
   "extractbb -O voice.pdf" 0 -1 0 ""
   "extractbb -O voice_2.pdf" 0 -1 0 ""
   "kibasen.pdf" 1549346360 2267321 b05fb7109033605e436909d152c91e53 ""
   "kumano_fes.pdf" 1549346360 61012 5850920edc422006c2c49ae66ecc8fe0 ""
   "kumano_fes2.pdf" 1549346360 136317 6f54f63522f886a54556cc73aea27c54 ""
   "muc.pdf" 1549917863 2853020 a7469cf384ab0b6e5e0eab1b3f9c5979 ""
-  "pamphlet2019.aux" 1549918000 15285 de35777df40a484ad949450cbe86241b ""
-  "pamphlet2019.out" 1549918000 2570 7b841000f27d559a339b555aa44dd9e3 ""
-  "pamphlet2019.tex" 1549917994 243903 207f2b3cd470aea4f5d04fdad0e857e9 ""
-  "pamphlet2019.toc" 1549918000 10957 d044685821d64bfcc1f851b546c85bbd ""
+  "pamphlet2019.aux" 1549918090 15214 197345f491c918d528bfb7f19c2146e1 ""
+  "pamphlet2019.out" 1549918090 2570 7b841000f27d559a339b555aa44dd9e3 ""
+  "pamphlet2019.tex" 1549918074 243908 c26af6c568a38fef71e7fb2f796f5571 ""
+  "pamphlet2019.toc" 1549918090 10957 d044685821d64bfcc1f851b546c85bbd ""
   "shitumon.pdf" 1549346360 5841 a70788232e3d988d12f7c3e8a6858b2c ""
-  "terrace.pdf" 1549917218 13422875 337358cb79bda102e4f2218ca0f2e842 ""
   "voice.pdf" 1549907533 181294 5c9c8fa75c971d5d835aefca73a248aa ""
   "voice_2.pdf" 1549904871 178396 53852f1005ac28351e12fbbb11d4890b ""
   (generated)
-  "pamphlet2019.aux"
-  "pamphlet2019.out"
-  "pamphlet2019.dvi"
   "pamphlet2019.toc"
   "pamphlet2019.log"
+  "pamphlet2019.out"
+  "pamphlet2019.dvi"
+  "pamphlet2019.aux"

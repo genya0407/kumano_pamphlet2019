@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.13)  12 FEB 2019 05:46
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.13)  12 FEB 2019 05:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -780,12 +780,6 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 160.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 160.
-File: terrace.pdf Graphic file (type pdf)
-<terrace.pdf>
-Overfull \hbox (11.70139pt too wide) in paragraph at lines 181--185
-[][]
- []
-
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 192.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -1070,12 +1064,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 20292 strings out of 493653
- 389681 string characters out of 6148873
- 474236 words of memory out of 5000000
- 23455 multiletter control sequences out of 15000+600000
+ 20287 strings out of 493653
+ 389597 string characters out of 6148873
+ 474197 words of memory out of 5000000
+ 23452 multiletter control sequences out of 15000+600000
  39102 words of font info for 170 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  55i,11n,73p,1306b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on pamphlet2019.dvi (60 pages, 432408 bytes).
+Output written on pamphlet2019.dvi (60 pages, 432316 bytes).
