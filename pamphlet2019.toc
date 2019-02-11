@@ -75,40 +75,45 @@
 \contentsline {subsection}{\numberline {5.3.4}終わりに}{35}{subsection.5.3.4}
 \contentsline {section}{\numberline {5.4}元寮生の声 ---寮生活を振り返って}{35}{section.5.4}
 \contentsline {section}{\numberline {5.5}寮食と寮生活}{35}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}寮食 $ \simeq $ 実家のご飯}{35}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.1}寮食 $ \simeq $ 実家のご飯}{36}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}コスパNo.1}{36}{subsection.5.5.2}
 \contentsline {subsection}{\numberline {5.5.3}普通にうまい}{36}{subsection.5.5.3}
 \contentsline {subsection}{\numberline {5.5.4}生協食堂との比較}{36}{subsection.5.5.4}
 \contentsline {subsection}{\numberline {5.5.5}食堂は第二の談話室}{36}{subsection.5.5.5}
-\contentsline {subsection}{\numberline {5.5.6}おすすめの寮生活}{36}{subsection.5.5.6}
+\contentsline {subsection}{\numberline {5.5.6}おすすめの寮生活}{37}{subsection.5.5.6}
 \contentsline {subsection}{\numberline {5.5.7}自画自賛タイム}{37}{subsection.5.5.7}
-\contentsline {section}{\numberline {5.6}B3どきどき$ \star $ ディアスポラ! }{37}{section.5.6}
-\contentsline {section}{\numberline {5.7}ミール奴隷解放宣言 ! !}{38}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}ミール奴隷とは...}{38}{subsection.5.7.1}
-\contentsline {section}{\numberline {5.8}熊野寮で始める１カ月5万円生活}{38}{section.5.8}
-\contentsline {subsubsection}{終わりに: 安アパートとしての熊野寮}{39}{subsubsection*.14}
-\contentsline {section}{\numberline {5.9}寮議論で現れがちな論者KUMANaverまとめ}{40}{section.5.9}
-\contentsline {subsection}{\numberline {5.9.1}まえがき}{40}{subsection.5.9.1}
-\contentsline {subsection}{\numberline {5.9.2}---熊野寮内のとある議論の記録}{40}{subsection.5.9.2}
-\contentsline {subsection}{\numberline {5.9.3}論者$ \cdot $ 主張タイプの分類まとめ}{42}{subsection.5.9.3}
-\contentsline {subsubsection}{第一章: 議論の方法論による分類}{42}{subsubsection*.15}
-\contentsline {subsubsection}{第二章: 主張の根拠による分類}{43}{subsubsection*.16}
-\contentsline {subsubsection}{第三章: 発言内容$ \cdot $ 意図による分類}{44}{subsubsection*.17}
-\contentsline {subsection}{\numberline {5.9.4}あとがき}{45}{subsection.5.9.4}
-\contentsline {chapter}{\numberline {第6章}寮生の声 ---過去の傑作選}{46}{chapter.6}
-\contentsline {subsection}{\numberline {6.0.1}おサルのはなし}{46}{subsection.6.0.1}
-\contentsline {subsection}{\numberline {6.0.2}ベルギー人Aの雑記}{46}{subsection.6.0.2}
-\contentsline {subsection}{\numberline {6.0.3}熊野寮, やべえよやべえよ}{47}{subsection.6.0.3}
-\contentsline {subsubsection}{自治寮を防衛にゃん! }{47}{subsubsection*.18}
-\contentsline {subsubsection}{団交をやめる. ボス交にする}{47}{subsubsection*.19}
-\contentsline {subsubsection}{確約を変える}{47}{subsubsection*.20}
-\contentsline {subsubsection}{入退寮権を剥奪する}{48}{subsubsection*.21}
-\contentsline {subsubsection}{外注化$ \cdot $ 非正規職化を進める}{48}{subsubsection*.22}
-\contentsline {subsection}{\numberline {6.0.4}ある自称: 一般女子寮生の声}{48}{subsection.6.0.4}
-\contentsline {subsection}{\numberline {6.0.5}受験生へ宛てて}{49}{subsection.6.0.5}
-\contentsline {subsection}{\numberline {6.0.6}おすすめの下宿先熊野寮}{50}{subsection.6.0.6}
-\contentsline {subsection}{\numberline {6.0.7}談話室について}{50}{subsection.6.0.7}
-\contentsline {chapter}{\numberline {第7章}FAQ -- 熊野寮生だけど質問ある?}{52}{chapter.7}
-\contentsline {subsection}{\numberline {7.0.1}入寮関連}{52}{subsection.7.0.1}
-\contentsline {subsection}{\numberline {7.0.2}生活関連}{53}{subsection.7.0.2}
-\contentsline {subsection}{\numberline {7.0.3}人間関係など}{54}{subsection.7.0.3}
+\contentsline {section}{\numberline {5.6}てんと生活のすすめ}{37}{section.5.6}
+\contentsline {section}{\numberline {5.7}ある留学生の雑記}{38}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}宣篌^^a0册}{38}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}排他}{38}{subsection.5.7.2}
+\contentsline {subsection}{\numberline {5.7.3}我}{39}{subsection.5.7.3}
+\contentsline {section}{\numberline {5.8}B3どきどき$ \star $ ディアスポラ! }{39}{section.5.8}
+\contentsline {section}{\numberline {5.9}ミール奴隷解放宣言 ! !}{40}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}ミール奴隷とは...}{41}{subsection.5.9.1}
+\contentsline {section}{\numberline {5.10}熊野寮で始める１カ月5万円生活}{41}{section.5.10}
+\contentsline {subsubsection}{終わりに: 安アパートとしての熊野寮}{42}{subsubsection*.14}
+\contentsline {section}{\numberline {5.11}寮議論で現れがちな論者KUMANaverまとめ}{42}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}まえがき}{42}{subsection.5.11.1}
+\contentsline {subsection}{\numberline {5.11.2}---熊野寮内のとある議論の記録}{43}{subsection.5.11.2}
+\contentsline {subsection}{\numberline {5.11.3}論者$ \cdot $ 主張タイプの分類まとめ}{45}{subsection.5.11.3}
+\contentsline {subsubsection}{第一章: 議論の方法論による分類}{45}{subsubsection*.15}
+\contentsline {subsubsection}{第二章: 主張の根拠による分類}{46}{subsubsection*.16}
+\contentsline {subsubsection}{第三章: 発言内容$ \cdot $ 意図による分類}{46}{subsubsection*.17}
+\contentsline {subsection}{\numberline {5.11.4}あとがき}{47}{subsection.5.11.4}
+\contentsline {chapter}{\numberline {第6章}寮生の声 ---過去の傑作選}{49}{chapter.6}
+\contentsline {subsection}{\numberline {6.0.1}おサルのはなし}{49}{subsection.6.0.1}
+\contentsline {subsection}{\numberline {6.0.2}ベルギー人Aの雑記}{49}{subsection.6.0.2}
+\contentsline {subsection}{\numberline {6.0.3}熊野寮, やべえよやべえよ}{50}{subsection.6.0.3}
+\contentsline {subsubsection}{自治寮を防衛にゃん! }{50}{subsubsection*.18}
+\contentsline {subsubsection}{団交をやめる. ボス交にする}{50}{subsubsection*.19}
+\contentsline {subsubsection}{確約を変える}{50}{subsubsection*.20}
+\contentsline {subsubsection}{入退寮権を剥奪する}{51}{subsubsection*.21}
+\contentsline {subsubsection}{外注化$ \cdot $ 非正規職化を進める}{51}{subsubsection*.22}
+\contentsline {subsection}{\numberline {6.0.4}ある自称: 一般女子寮生の声}{51}{subsection.6.0.4}
+\contentsline {subsection}{\numberline {6.0.5}受験生へ宛てて}{52}{subsection.6.0.5}
+\contentsline {subsection}{\numberline {6.0.6}おすすめの下宿先熊野寮}{53}{subsection.6.0.6}
+\contentsline {subsection}{\numberline {6.0.7}談話室について}{53}{subsection.6.0.7}
+\contentsline {chapter}{\numberline {第7章}FAQ -- 熊野寮生だけど質問ある?}{55}{chapter.7}
+\contentsline {subsection}{\numberline {7.0.1}入寮関連}{55}{subsection.7.0.1}
+\contentsline {subsection}{\numberline {7.0.2}生活関連}{56}{subsection.7.0.2}
+\contentsline {subsection}{\numberline {7.0.3}人間関係など}{57}{subsection.7.0.3}
