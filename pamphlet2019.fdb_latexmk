@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1549893396 "pamphlet2019.dvi" "pamphlet2019.pdf" "pamphlet2019" 1549893398
-  "pamphlet2019.dvi" 1549893395 432480 07f0737934606f513763560982d02fdc "latex"
+["dvipdf"] 1549907216 "pamphlet2019.dvi" "pamphlet2019.pdf" "pamphlet2019" 1549907220
+  "pamphlet2019.dvi" 1549907216 423880 116e5eccab4201cd3f60a22744947412 "latex"
   (generated)
   "pamphlet2019.pdf"
-["latex"] 1549893391 "pamphlet2019.tex" "pamphlet2019.dvi" "pamphlet2019" 1549893398
+["latex"] 1549907210 "pamphlet2019.tex" "pamphlet2019.dvi" "pamphlet2019" 1549907220
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/ptex-fonts/ascgrp/ascgrp.tfm" 1480098698 448 9a1f3a95c3a7e2681aa6eefcf410b7ac ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1480098698 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -202,17 +202,21 @@
   "extractbb -O kumano_fes.pdf" 0 -1 0 ""
   "extractbb -O kumano_fes2.pdf" 0 -1 0 ""
   "extractbb -O shitumon.pdf" 0 -1 0 ""
+  "extractbb -O voice.pdf" 0 -1 0 ""
+  "extractbb -O voice_2.pdf" 0 -1 0 ""
   "kibasen.pdf" 1549346360 2267321 b05fb7109033605e436909d152c91e53 ""
   "kumano_fes.pdf" 1549346360 61012 5850920edc422006c2c49ae66ecc8fe0 ""
   "kumano_fes2.pdf" 1549346360 136317 6f54f63522f886a54556cc73aea27c54 ""
-  "pamphlet2019.aux" 1549893395 14923 1d4bbf8abbe542ff8c8ef40129ca4711 ""
-  "pamphlet2019.out" 1549893395 2546 e44354ea27d9e4933ee0693a6dd6663d ""
-  "pamphlet2019.tex" 1549893387 245970 0ce9a2c0c0e4e95ced8fc0c2a509f109 ""
-  "pamphlet2019.toc" 1549893395 10777 69f6927d113ad1404eb87131b1f87d38 ""
+  "pamphlet2019.aux" 1549907216 14637 3aa85a210f4a06ce6b62838e3ffb3c1f ""
+  "pamphlet2019.out" 1549907216 2546 c7a93bacdc5ad9c119da2633f9b268d2 ""
+  "pamphlet2019.tex" 1549907204 238586 22af45ff9e422721bf8a287fdbcc41bc ""
+  "pamphlet2019.toc" 1549907216 10545 e5c76b4201f0f38a847c147a203ba91c ""
   "shitumon.pdf" 1549346360 5841 a70788232e3d988d12f7c3e8a6858b2c ""
+  "voice.pdf" 1549904203 181294 1b0cc40aac58fdcca8584ab3de43a4d4 ""
+  "voice_2.pdf" 1549904871 178396 53852f1005ac28351e12fbbb11d4890b ""
   (generated)
+  "pamphlet2019.out"
   "pamphlet2019.log"
   "pamphlet2019.aux"
   "pamphlet2019.toc"
   "pamphlet2019.dvi"
-  "pamphlet2019.out"
