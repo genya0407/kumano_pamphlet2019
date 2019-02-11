@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.13)  12 FEB 2019 05:15
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.13)  12 FEB 2019 05:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -780,88 +780,96 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 160.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 160.
+File: terrace.pdf Graphic file (type pdf)
+<terrace.pdf>
+Overfull \hbox (11.70139pt too wide) in paragraph at lines 181--185
+[][]
+ []
+
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 185.
+(Font)              scaled to size 6.72699pt on input line 192.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 185.
+(Font)              scaled to size 5.76599pt on input line 192.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 185.
+(Font)              scaled to size 7.68799pt on input line 192.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 185.
+(Font)              scaled to size 5.76599pt on input line 192.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 185.
+(Font)              scaled to size 5.76599pt on input line 192.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 191.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 200.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 191.
+(Font)              scaled to size 9.60999pt on input line 200.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 191.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 200.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 191.
+(Font)              scaled to size 9.60999pt on input line 200.
 [2
 
-] [3] [4]
+]
+File: muc.pdf Graphic file (type pdf)
+ <muc.pdf> [3] [4]
 \c@mymemory=\count160
 LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <7> not available
-(Font)              Font shape `JT1/mc/m/n' tried instead on input line 259.
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 274.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 259.
+(Font)              scaled to size 6.72699pt on input line 274.
 LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <7> not available
-(Font)              Font shape `JY1/mc/m/n' tried instead on input line 259.
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 274.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 259.
+(Font)              scaled to size 6.72699pt on input line 274.
 LaTeX Font Info:    Font shape `JT1/mc/m/it' in size <6> not available
-(Font)              Font shape `JT1/mc/m/n' tried instead on input line 259.
+(Font)              Font shape `JT1/mc/m/n' tried instead on input line 274.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 259.
+(Font)              scaled to size 5.76599pt on input line 274.
 LaTeX Font Info:    Font shape `JY1/mc/m/it' in size <6> not available
-(Font)              Font shape `JY1/mc/m/n' tried instead on input line 259.
+(Font)              Font shape `JY1/mc/m/n' tried instead on input line 274.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 259.
+(Font)              scaled to size 5.76599pt on input line 274.
 
-Overfull \hbox (16.69814pt too wide) in paragraph at lines 307--317
+Overfull \hbox (16.69814pt too wide) in paragraph at lines 322--332
 [][][][] 
  []
 
 [5] [6]
 第2章
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 416.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 431.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 416.
+(Font)              scaled to size 9.60999pt on input line 431.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 416.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 431.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 416.
+(Font)              scaled to size 9.60999pt on input line 431.
 [7
 
 ] [8]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.33698pt on input line 451.
+(Font)              scaled to size 16.33698pt on input line 466.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.33698pt on input line 451.
+(Font)              scaled to size 16.33698pt on input line 466.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 451.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 466.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 16.33698pt on input line 451.
+(Font)              scaled to size 16.33698pt on input line 466.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 451.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 466.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 16.33698pt on input line 451.
+(Font)              scaled to size 16.33698pt on input line 466.
 LaTeX Font Info:    Font shape `JT1/mc/bx/it' in size <17> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 456.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 471.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 16.33698pt on input line 456.
+(Font)              scaled to size 16.33698pt on input line 471.
 LaTeX Font Info:    Font shape `JY1/mc/bx/it' in size <17> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 456.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 471.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 16.33698pt on input line 456.
+(Font)              scaled to size 16.33698pt on input line 471.
  [9]
 File: daimonji_1.pdf Graphic file (type pdf)
  <daimonji_1.pdf> [10] [11]
 File: kumano_fes.pdf Graphic file (type pdf)
  <kumano_fes.pdf>
-Overfull \hbox (14.30466pt too wide) in paragraph at lines 550--553
+Overfull \hbox (14.30466pt too wide) in paragraph at lines 565--568
 [][]
  []
 
@@ -875,27 +883,27 @@ File: kibasen.pdf Graphic file (type pdf)
 
 ] [16]
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 658.
+(Font)              scaled to size 19.9311pt on input line 673.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 658.
+(Font)              scaled to size 16.60605pt on input line 673.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 658.
+(Font)              scaled to size 23.90964pt on input line 673.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 658.
+(Font)              scaled to size 19.9311pt on input line 673.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 658.
+(Font)              scaled to size 16.60605pt on input line 673.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 658.
+(hyperref)                removing `math shift' on input line 673.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 658.
+(hyperref)                removing `\cdot' on input line 673.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 658.
+(hyperref)                removing `math shift' on input line 673.
 
 [17] [18]
 Overfull \vbox (25.43394pt too high) has occurred while \output is active []
@@ -905,52 +913,52 @@ Missing character: There is no ^^ef in font cmr10!
 Missing character: There is no ^^bd in font cmr10!
 Missing character: There is no ^^a5 in font cmr10!
  [20]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 812.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 827.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 812.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 827.
  [21] [22] [23]
 第4章
 [24
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 973.
+(Font)              scaled to size 8.64899pt on input line 988.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 973.
+(Font)              scaled to size 8.64899pt on input line 988.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 976.
+(Font)              scaled to size 8.64899pt on input line 991.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 976.
+(Font)              scaled to size 8.64899pt on input line 991.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 984.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 999.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 984.
+(Font)              scaled to size 8.64899pt on input line 999.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 984.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 999.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 984.
+(Font)              scaled to size 8.64899pt on input line 999.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 25 might be wrong on input line 1005.
+(multicol)                Footnotes on page 25 might be wrong on input line 1020.
 
 [25]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 26 might be wrong on input line 1082.
+(multicol)                Footnotes on page 26 might be wrong on input line 1097.
 
 [26]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 27 might be wrong on input line 1151.
+(multicol)                Footnotes on page 27 might be wrong on input line 1166.
 
 [27]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 28 might be wrong on input line 1241.
+(multicol)                Footnotes on page 28 might be wrong on input line 1256.
 
 [28] [29] [30]
 Missing character: There is no ^^ef in font cmr9!
@@ -960,26 +968,26 @@ Missing character: There is no ^^a1 in font cmr9!
 第5章
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1408.
+(hyperref)                removing `math shift' on input line 1423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 1408.
+(hyperref)                removing `\cdot' on input line 1423.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1408.
+(hyperref)                removing `math shift' on input line 1423.
 
 [32
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1441.
+(hyperref)                removing `math shift' on input line 1456.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1441.
+(hyperref)                removing `math shift' on input line 1456.
 
 [33] [34] [35] [36]
 File: voice.pdf Graphic file (type pdf)
@@ -988,41 +996,41 @@ File: voice_2.pdf Graphic file (type pdf)
  <voice_2.pdf> [38] [39] [40]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1629.
+(hyperref)                removing `math shift' on input line 1644.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\star' on input line 1629.
+(hyperref)                removing `\star' on input line 1644.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1629.
+(hyperref)                removing `math shift' on input line 1644.
 
 [41]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1664.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1679.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 1664.
+(Font)              scaled to size 16.60605pt on input line 1679.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1664.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1679.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 1664.
+(Font)              scaled to size 16.60605pt on input line 1679.
  [42] [43]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1751.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1766.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 1751.
+(Font)              scaled to size 8.64899pt on input line 1766.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1751.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1766.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 1751.
+(Font)              scaled to size 8.64899pt on input line 1766.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 44 might be wrong on input line 1781.
+(multicol)                Footnotes on page 44 might be wrong on input line 1796.
 
 [44] [45]
-Underfull \hbox (badness 10000) in paragraph at lines 1849--1850
+Underfull \hbox (badness 10000) in paragraph at lines 1864--1865
 []\JY1/mc/m/n/9 議長
  []
 
@@ -1045,14 +1053,14 @@ File: shitumon.pdf Graphic file (type pdf)
 ]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 57 might be wrong on input line 2313.
+(multicol)                Footnotes on page 57 might be wrong on input line 2328.
 
 [57] [58] [59] [60]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2382.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2382.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2397.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2397.
  (./pamphlet2019.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2382.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2382.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2397.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2397.
 Package rerunfilecheck Info: File `pamphlet2019.out' has not changed.
 (rerunfilecheck)             Checksum: 7B841000F27D559A339B555AA44DD9E3;2570.
 
@@ -1062,12 +1070,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 20283 strings out of 493653
- 389539 string characters out of 6148873
- 474197 words of memory out of 5000000
- 23450 multiletter control sequences out of 15000+600000
+ 20292 strings out of 493653
+ 389681 string characters out of 6148873
+ 474236 words of memory out of 5000000
+ 23455 multiletter control sequences out of 15000+600000
  39102 words of font info for 170 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  55i,11n,73p,1306b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on pamphlet2019.dvi (60 pages, 432156 bytes).
+Output written on pamphlet2019.dvi (60 pages, 432408 bytes).
