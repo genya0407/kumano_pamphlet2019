@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.13)  12 FEB 2019 02:56
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2017.12.13)  12 FEB 2019 05:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -981,94 +981,80 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1441.
 
-[33] [34] [35]
-
-./pamphlet2019.tex:1508: Package babel Error: You haven't defined the language schinese yet.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1508 \foreignlanguage{schinese}{^^e7^^bb^^99}
-                                               
-Your command will be ignored, type <return> to proceed
-
-Missing character: There is no ^^e7 in font cmr10!
-Missing character: There is no ^^bb in font cmr10!
-Missing character: There is no ^^99 in font cmr10!
+[33] [34] [35] [36]
 File: voice.pdf Graphic file (type pdf)
-<voice.pdf> [36]
+ <voice.pdf> [37]
 File: voice_2.pdf Graphic file (type pdf)
- <voice_2.pdf> [37] [38] [39]
+ <voice_2.pdf> [38] [39] [40]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1591.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\star' on input line 1591.
+(hyperref)                removing `math shift' on input line 1629.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1591.
+(hyperref)                removing `\star' on input line 1629.
 
-[40]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1629.
+
+[41]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1626.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1664.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 1626.
+(Font)              scaled to size 16.60605pt on input line 1664.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1626.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1664.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 1626.
- [41] [42]
+(Font)              scaled to size 16.60605pt on input line 1664.
+ [42] [43]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1713.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1751.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 1713.
+(Font)              scaled to size 8.64899pt on input line 1751.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1713.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1751.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 1713.
+(Font)              scaled to size 8.64899pt on input line 1751.
 
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 43 might be wrong on input line 1743.
+(multicol)                Footnotes on page 44 might be wrong on input line 1781.
 
-[43] [44]
-Underfull \hbox (badness 10000) in paragraph at lines 1811--1812
+[44] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 1849--1850
 []\JY1/mc/m/n/9 議長
  []
 
-[45] [46] [47] [48]
+[46] [47] [48] [49]
 第6章
-[49
+[50
 
-] [50] [51] [52]
+] [51] [52] [53]
 Missing character: There is no ^^ef in font cmr10!
 Missing character: There is no ^^bd in font cmr10!
 Missing character: There is no ^^a2 in font cmr10!
 Missing character: There is no ^^ef in font cmr10!
 Missing character: There is no ^^bd in font cmr10!
 Missing character: There is no ^^a3 in font cmr10!
- [53] [54]
+ [54] [55]
 第7章
 File: shitumon.pdf Graphic file (type pdf)
-<shitumon.pdf> [55
+<shitumon.pdf> [56
 
 ]
 
 Package multicol Warning: I moved some lines to the next page.
-(multicol)                Footnotes on page 56 might be wrong on input line 2275.
+(multicol)                Footnotes on page 57 might be wrong on input line 2313.
 
-[56] [57]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2337.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2337.
+[57] [58]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2377.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2377.
  (./pamphlet2019.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2337.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2337.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2377.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2377.
 Package rerunfilecheck Info: File `pamphlet2019.out' has not changed.
-(rerunfilecheck)             Checksum: C7A93BACDC5AD9C119DA2633F9B268D2;2546.
+(rerunfilecheck)             Checksum: 7B841000F27D559A339B555AA44DD9E3;2570.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1076,12 +1062,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 20284 strings out of 493653
- 389552 string characters out of 6148873
- 474141 words of memory out of 5000000
- 23451 multiletter control sequences out of 15000+600000
+ 20283 strings out of 493653
+ 389539 string characters out of 6148873
+ 474197 words of memory out of 5000000
+ 23450 multiletter control sequences out of 15000+600000
  39102 words of font info for 170 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  55i,11n,73p,1306b,675s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on pamphlet2019.dvi (57 pages, 423880 bytes).
+Output written on pamphlet2019.dvi (58 pages, 431152 bytes).
