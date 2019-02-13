@@ -2,15 +2,14 @@
 
 \usepackage[explicit]{titlesec} %章立てのレイアウト変更
 \usepackage{picture} %色付きの箱を作ったり
-\usepackage[usenames]{color} %すきな色を作れます
+\usepackage[usenames]{color} %好きな色を作れます
 \usepackage{amsmath}%数式を使うならまずこれ!
 \usepackage{amssymb}%特殊な記号を使いたいならとりあえずこれ!
 \usepackage{mathrsfs}%カッコいい花文字を使うときはこれ!
-\usepackage{bm} %数式の太字
+\usepackage{bm} %ベクトルとか数式の太字
 \usepackage{braket} %ブラケットを作るには必要
 \usepackage{tikz} %texで図を書く場合などに用いる.
 \usepackage{amsfonts}
-%\usepackage{mathtools}
 \usepackage{enumitem}
 \usepackage{dsfont}
 \usetikzlibrary{calc}
@@ -67,9 +66,9 @@
 [hang] %形状など
 {\vspace{-25truemm} \HUGE} %書式(フォントなど)
 {} %ラベル書式
-{0pt} %ラベルと見出し文字の間隔
-{\titleline[r]{#1} \titlerule}
-[\vspace{-10mm}]%見出し後ろの記号
+{0pt} %ラベルと見出し文字の間の空き
+{\titleline[r]{#1} \titlerule} %見出し文字直前
+[\vspace{-10mm}]%見出し直後
 
 % section----------------------------------
 \titleformat{\section}[block]
@@ -83,7 +82,7 @@
 \end{picture}
 \\
 \vspace{-50pt}
-] % ここで周辺部の装飾などを行う
+] 
 
 % subsection--------------------------------
 \titleformat{\subsection}[block]
@@ -104,7 +103,7 @@
 
 
 
-% margin
+% 余白の大きさを決める. 
 \usepackage[top=30truemm, bottom=20truemm, left=20truemm, right=20truemm]{geometry}
 
 %-------------------------------------------------
@@ -131,46 +130,34 @@
 
 \begin{document}
   %\maketitle
-    %\setcounter{page}{0}%これはあまり意味がない(笑)
-
-%表紙の裏は空白するので空のページを挿入(表紙は別刷りにすることから)
-
+   
 \setcounter{page}{1}
   \pagenumbering{arabic}
   \setcounter{tocdepth}{1}
   \tableofcontents
-  %この入寮募集要項は\LaTeX を用いて作成されました.
+
     \thispagestyle{empty}
-%  \begin{tcolorbox}
- % {\Large \gt  これは見本版です. 実際には, 寮生の声($+3$人分)と吉田寮の広告が追加されます. 寮周辺の地図や寮内, 部屋の図面は表紙などと一緒に別刷りにします.}
- %   \end{tcolorbox}
-  %\renewcommand{\thesection}{\arabic{section}} %階層の書体変更
 
-%--------------------------------------------------
-%目次までと本体とページ番号の書体を変更する.
   \newpage
-  %\setcounter{page}{1}
- % \pagenumbering{arabic}
-
-
+ 
 
 \chapter{入寮にあたって}
 	\section{熊野寮概要} \label{sec:abst}
 
 		\subsection{基本データ} \label{subsec:data}
-		\begin{description} %\subsubsection{寮費}
+		\begin{description} 
 		\item[寮費] \hspace{10mm}
 			\begin{description}
 			\item[維持費] 月4,100円(水光熱費込み)
 			\item[入寮予備金] 3,000円
 			\end{description}
-		\item[寮食] \hspace{10mm} %\subsubsection{寮食}
+		\item[寮食] \hspace{10mm} 
 			\begin{description}
 			\item[内容] 基本的に朝昼夕の三食
 			\item[期間] 授業期間の平日(土日祝は休み)
 			\item[食券代] 朝180円, 昼290円, 夕420円(5食分以上のまとめ買いのカードなら朝10円, 昼夜は30円引き)
 			\end{description}
-		\item[連絡先] \hspace{10mm} %\subsubsection{連絡先}
+		\item[連絡先] \hspace{10mm} 
 			\begin{description}
 			\item[住所]606-8393 京都府京都市左京区丸太町通川端東入東竹屋町50 京都大学熊野寮
 			\item[電話番号] 075-751-4050 または 075-751-4051
@@ -195,7 +182,7 @@
 
 
 
-%ここに建物の写真か何か入れる
+%ここに建物の写真か何か入れる % やっぱやめる
 
  \newpage
 
@@ -223,7 +210,6 @@
     		\end{flushleft}
     		\end{figure}
 
-%ここにも写真欲しい
 
 \newpage
 	\section{募集要項} \label{sec:gl}
@@ -985,7 +971,7 @@
 		\item[もっちー] 文学部 魔剤愛飲家. 座右の銘は「強さは肉と薬が与えてくれる. 」
 		\end{description}
 		\end{itembox}
-\small
+
 		\begin{multicols}{2}
 		\begin{description}
 		\item[やくざ] 今回は1回生の皆さんに集まっていただきました. 事前に母校の京大志望の後輩から「熊野寮について気になること」を聞き取っているので, そのテーマをもとにお喋りしましょう, という企画ですね.
@@ -1312,11 +1298,11 @@
 		\textbf{---この後2時間食堂でお喋りし, 皆が寝たのは早朝5時を過ぎた頃でした. }
 
 \end{multicols}
-\normalsize
+
 		\subsection{大学生活を送る上でちょっと考えてほしいこと}
 
 		 入寮パンフにセクハラやハラスメントの話を載せたいよねということで, 座談会をすることにしました. 高校までの学校の授業では教えないし, 特にそういうこと考えずに過ごしてきた人も多いだろうから, 少し考えてほしいな, と. 会社のセクハラ対応ガイドラインみたいなのって, あれしちゃだめこれしちゃ駄目って禁止事項が羅列されています. でもそれはかえって, それさえしなければいいんでしょという思考停止を生むと思います. そうではなくて, 今後大学生活を送っていく上での問題提起として読んでください.
-\small
+		 
 		\begin{multicols}{2}
 
 		\begin{description}
@@ -1399,7 +1385,6 @@
 
 		\end{description}
 		\end{multicols}
-\normalsize
 		\begin{tcolorbox}
 		POINT
 		\begin{itemize}
