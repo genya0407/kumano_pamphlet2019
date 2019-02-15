@@ -5,9 +5,10 @@
 \usepackage[usenames]{color} %好きな色を作れます
 \usepackage{amsmath}%数式を使うならまずこれ!
 \usepackage{amssymb}%特殊な記号を使いたいならとりあえずこれ!
-\usepackage{mathrsfs}%カッコいい花文字を使うときはこれ!
+%\usepackage{mathrsfs}%カッコいい花文字を使うときはこれ!
 \usepackage{bm} %ベクトルとか数式の太字
-\usepackage{braket} %ブラケットを作るには必要
+%\usepackage{braket} %ブラケットを作るには必要
+% mathjaxで表示できないので自前で定義する
 \usepackage{tikz} %texで図を書く場合などに用いる.
 \usepackage{amsfonts}
 \usepackage{enumitem}
@@ -1450,7 +1451,11 @@
 
 	\rightline{(文: Chageじゃないほう)}
 
-
+$$
+\def\bra#1{\mathinner{\left\langle{#1}\right|}}
+\def\ket#1{\mathinner{\left|{#1}\right\rangle}}
+\def\braket#1{\mathinner{\left\langle#1\right\rangle}}
+$$
 
   \section{シュレーディンガーの猫救出作戦ノ記録}
 
@@ -1473,9 +1478,9 @@
     \]
     と書けます. この$ \ket{\cdot} $ という記号は\textbf{ケット} と呼ばれる記号です. よくわからない人はベクトルのお化けみたいなもんだと思ってください. このベクトルのノルム(大きさ)を
     \[
-    \| \psi \|^2 := \braket{\psi | \psi}
+        \| \psi \|^2 := \braket{\psi | \psi}
     \]
-    で定義します. $ \bra{\cdot} $ は\textbf{ブラ}といいます. ケットと合わせてブラケット(bracket: 括弧の意)です. このブラケット$ \braket{\cdot | \cdot } $ でブラとケットの内積を表します. また, 状態を表すベクトルは大きさが1であること, つまり$ \|\mathrm{alive}\|^2 = \braket{\mathrm{alive}|\mathrm{alive} } = 1 $ を要求します. 死亡状態dead も同様のことが成り立ちます. 同時に成り立たない状態は実現しないので, $ \braket{\mathrm{alive}|\mathrm{dead} } = \braket{\mathrm{dead}|\mathrm{alive} }  =0$ が成り立ちます. 以上の計算法則を用いて, 生きている確率と死んでいる確率はどちらも
+    で定義します. $ \bra{\cdot} $ は\textbf{ブラ}といいます. ケットと合わせてブラケット(bracket: 括弧の意)です. このブラケット $ \braket{\cdot | \cdot } $ でブラとケットの内積を表します. また, 状態を表すベクトルは大きさが1であること, つまり$ \|\mathrm{alive}\|^2 = \braket{\mathrm{alive}|\mathrm{alive} } = 1 $ を要求します. 死亡状態dead も同様のことが成り立ちます. 同時に成り立たない状態は実現しないので, $ \braket{\mathrm{alive}|\mathrm{dead} } = \braket{\mathrm{dead}|\mathrm{alive} }  =0$ が成り立ちます. 以上の計算法則を用いて, 生きている確率と死んでいる確率はどちらも
     \[
     | \braket{\psi | \mathrm{alive} } | ^2 = | \braket{\psi | \mathrm{dead} } |^2= \frac{1}{2}
     \]
