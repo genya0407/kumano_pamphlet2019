@@ -1,5 +1,5 @@
 - 画面幅
-- page
+- pageref
 - fig
 - 目次
 - ページ分け
