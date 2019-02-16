@@ -43,4 +43,4 @@ main = do
     Right txt <- runIO $ writeDoc (Pandoc meta chapter)
     T.writeFile (chapterFileName chapter) txt
   let chapterAnchor chapter = "<a href='./" <> chapterFileName chapter <> "'>" <> chapterTitle chapter <> "</a>"
-  putStrLn . unlines $ map chapterAnchor chapters
+  writeFile "index.html" . unlines $ map chapterAnchor chapters
