@@ -1,0 +1,34 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 3e844203c24180ed89fa622818fbdfcf331ce9741bb848e3d184d59922470b4a
+
+name:           pamphlet-converter
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/githubuser/pamphlet-converter#readme
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2019 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable pamphlet-converter
+  main-is: Main.hs
+  other-modules:
+      Paths_pamphlet_converter
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , pandoc
+    , pandoc-types
+    , split
+    , text
+  default-language: Haskell2010
