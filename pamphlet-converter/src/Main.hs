@@ -1,3 +1,4 @@
+{-# LANGUAGE OverloadedStrings #-}
 module Main where
 
 import Text.Pandoc
@@ -24,7 +25,10 @@ splitChapters = spanWith isChapter
     isChapter (Header 1 _ _) = True
     isChapter _ = False
 
-chapterTitle chapter = let Header 1 _ [Str title] = head chapter in title
+chapterTitle (Header 1 _ contents:_) = T.unpack title
+    where
+      Right title = runPure $ writePlain def (Pandoc nullMeta [Plain contents])
+chapterTitle _ = undefined
 
 readDoc = readLaTeX def
 writeDoc = writeHtml5String def
@@ -33,6 +37,10 @@ main :: IO ()
 main = do
   txt <- T.getContents
   Right pdc@(Pandoc meta ast) <- runIO $ readDoc txt
-  forM_ (splitChapters ast) $ \chapter -> do
+  let chapters = splitChapters ast
+      chapterFileName chapter = "pages/" ++ chapterTitle chapter ++ ".html"
+  forM_ chapters $ \chapter -> do
     Right txt <- runIO $ writeDoc (Pandoc meta chapter)
-    T.writeFile ("pages/" ++ chapterTitle chapter ++ ".html") txt
+    T.writeFile (chapterFileName chapter) txt
+  let chapterAnchor chapter = "<a href='./" <> chapterFileName chapter <> "'>" <> chapterTitle chapter <> "</a>"
+  putStrLn . unlines $ map chapterAnchor chapters
