@@ -17,6 +17,7 @@ dependencies:
   - pandoc-types
   - split
   - text
+  - filepath
 
 executables:
   pamphlet-converter:

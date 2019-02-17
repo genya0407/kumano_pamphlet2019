@@ -6,6 +6,8 @@ import Text.Pandoc.Definition
 import qualified Data.Text.IO as T
 import qualified Data.Text as T
 import Control.Monad
+import System.Environment (getArgs)
+import System.FilePath.Posix (joinPath)
 
 -- spanWith (==1) [2,1,2,2,2,1,1] == [[2], [1,2,2,2], [1], [1]]
 -- spanWith (==1) [1,2,1,2,2,2,1,1] == [[1,2], [1,2,2,2], [1], [1]]
@@ -35,12 +37,14 @@ writeDoc = writeHtml5String def
 
 main :: IO ()
 main = do
+  outdir <- fmap (!! 0) getArgs
+  let writeFile' fname = T.writeFile (joinPath [outdir, fname])
   txt <- T.getContents
   Right pdc@(Pandoc meta ast) <- runIO $ readDoc txt
   let chapters = splitChapters ast
-      chapterFileName chapter = "pages/" ++ chapterTitle chapter ++ ".html"
+      chapterFileName chapter = joinPath ["pages/", chapterTitle chapter ++ ".html"]
   forM_ chapters $ \chapter -> do
     Right txt <- runIO $ writeDoc (Pandoc meta chapter)
-    T.writeFile (chapterFileName chapter) txt
+    writeFile' (chapterFileName chapter) txt
   let chapterAnchor chapter = "<a href='./" <> chapterFileName chapter <> "'>" <> chapterTitle chapter <> "</a>"
-  writeFile "index.html" . unlines $ map chapterAnchor chapters
+  writeFile' "index.html" . T.pack . unlines $ map chapterAnchor chapters
