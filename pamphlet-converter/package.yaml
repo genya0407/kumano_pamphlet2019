@@ -18,6 +18,8 @@ dependencies:
   - split
   - text
   - filepath
+  - lucid
+  - conversion
 
 executables:
   pamphlet-converter:

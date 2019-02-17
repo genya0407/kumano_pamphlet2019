@@ -5,9 +5,11 @@ import Text.Pandoc
 import Text.Pandoc.Definition
 import qualified Data.Text.IO as T
 import qualified Data.Text as T
+import qualified Data.Text.Lazy as LT
 import Control.Monad
 import System.Environment (getArgs)
 import System.FilePath.Posix (joinPath)
+import Lucid
 
 -- spanWith (==1) [2,1,2,2,2,1,1] == [[2], [1,2,2,2], [1], [1]]
 -- spanWith (==1) [1,2,1,2,2,2,1,1] == [[1,2], [1,2,2,2], [1], [1]]
@@ -31,9 +33,17 @@ chapterTitle (Header 1 _ contents:_) = T.unpack title
     where
       Right title = runPure $ writePlain def (Pandoc nullMeta [Plain contents])
 chapterTitle _ = undefined
+chapterFileName chapter = joinPath ["pages/", chapterTitle chapter ++ ".html"]
 
 readDoc = readLaTeX def
 writeDoc = writeHtml5String def
+
+indexHTML :: [(String, String)] -> T.Text
+indexHTML subpages = T.pack . LT.unpack . renderText $
+  div_ $
+    ul_ $
+      forM_ subpages $ \(path, name) ->
+        li_ $ a_ [href_ $ T.pack path] (toHtml name)
 
 main :: IO ()
 main = do
@@ -42,9 +52,9 @@ main = do
   txt <- T.getContents
   Right pdc@(Pandoc meta ast) <- runIO $ readDoc txt
   let chapters = splitChapters ast
-      chapterFileName chapter = joinPath ["pages/", chapterTitle chapter ++ ".html"]
   forM_ chapters $ \chapter -> do
     Right txt <- runIO $ writeDoc (Pandoc meta chapter)
     writeFile' (chapterFileName chapter) txt
-  let chapterAnchor chapter = "<a href='./" <> chapterFileName chapter <> "'>" <> chapterTitle chapter <> "</a>"
-  writeFile' "index.html" . T.pack . unlines $ map chapterAnchor chapters
+  writeFile' "index.html" . indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
+  --let chapterAnchor chapter = "<a href='./" <> chapterFileName chapter <> "'>" <> chapterTitle chapter <> "</a>"
+  --writeFile' "index.html" . T.pack . unlines $ map chapterAnchor chapters
