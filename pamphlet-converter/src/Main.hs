@@ -67,9 +67,15 @@ layoutHTML :: T.Text -> T.Text
 layoutHTML content = T.pack . LT.unpack . renderText $
   doctypehtml_ $ do
     head_ $ do
+      meta_ [charset_ "utf-8"]
+      meta_ [name_ "viewport", content_ "width=device-width, initial-scale=1.0"]
+      link_ [rel_ "stylesheet", href_ "/static/all.css"]
       script_ [type_ "text/x-mathjax-config"] ("MathJax.Hub.Config({TeX: { equationNumbers: {autoNumber: 'all'} }, tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']]}});" :: T.Text)
       script_ [src_ "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"] ("" :: T.Text) :: Html ()
-    body_ $ toHtmlRaw content
+    body_ $ do
+      header_ $ do
+        a_ [href_ "/", style_ "text-align: center;"] "2019年 熊野寮入寮パンフレット"
+      div_ [id_ "content"] $ toHtmlRaw content
 
 doubleQuote :: Inline -> Inline
 doubleQuote (Str s) = Str (replace "``" "“" s)
@@ -105,4 +111,4 @@ main = do
     else do
       Right txt <- runIO $ writeDoc (Pandoc meta chapter)
       writeFile' (chapterFileName chapter) $ layoutHTML txt
-  writeFile' "index.html" . indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
+  writeFile' "index.html" . layoutHTML . indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters

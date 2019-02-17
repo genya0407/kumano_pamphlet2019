@@ -1,0 +1,35 @@
+div#content {
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.05);
+}
+
+header > a {
+    text-decoration: none;
+    color: black;
+}
+
+ul > li {
+    margin-bottom: 0.5em;
+}
+
+dl > dt {
+    font-weight: bold;
+}
+
+dl > dd {
+    margin-left: 10px;
+}
+
+td, th {
+    border: 1px solid grey;
+    padding: 5px;
+}
