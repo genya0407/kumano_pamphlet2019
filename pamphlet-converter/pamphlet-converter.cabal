@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 6c10429bc9a63ea29dbd34b36cea03e413bf66284d4eaefe6df2a5538959c660
+-- hash: 74033efa2f7d6b214b590092121ddb8772968b745e1b75399286b0c20e66b867
 
 name:           pamphlet-converter
 version:        0.1.0.0
@@ -27,7 +27,9 @@ executable pamphlet-converter
       src
   build-depends:
       base >=4.7 && <5
-    , conversion
+    , base64-bytestring
+    , bytestring
+    , directory
     , filepath
     , lucid
     , pandoc

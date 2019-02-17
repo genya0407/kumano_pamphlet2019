@@ -19,7 +19,7 @@ dependencies:
   - text
   - filepath
   - lucid
-  - conversion
+  - directory
 
 executables:
   pamphlet-converter:
