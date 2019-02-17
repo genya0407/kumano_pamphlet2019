@@ -16,6 +16,7 @@ import System.Environment (getArgs)
 import System.FilePath.Posix (joinPath, takeDirectory)
 import System.Directory (createDirectoryIfMissing)
 import Lucid
+import Lucid.Base (makeAttribute)
 import Debug.Trace (traceShowId, traceShow)
 
 -- spanWith (==1) [2,1,2,2,2,1,1] == [[2], [1,2,2,2], [1], [1]]
@@ -63,8 +64,10 @@ indexHTML subpages = T.pack . LT.unpack . renderText $
       forM_ subpages $ \(path, name) ->
         li_ $ a_ [href_ $ T.pack (joinPath ["/", path])] (toHtml name)
 
-layoutHTML :: String -> T.Text -> T.Text
-layoutHTML title content = T.pack . LT.unpack . renderText $
+property_ = makeAttribute "property"
+
+layoutHTML :: String -> String -> T.Text -> T.Text
+layoutHTML title description content = T.pack . LT.unpack . renderText $
   doctypehtml_ $ do
     head_ $ do
       meta_ [charset_ "utf-8"]
@@ -73,6 +76,10 @@ layoutHTML title content = T.pack . LT.unpack . renderText $
       script_ [type_ "text/x-mathjax-config"] ("MathJax.Hub.Config({TeX: { equationNumbers: {autoNumber: 'all'} }, tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']]}});" :: T.Text)
       script_ [src_ "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"] ("" :: T.Text) :: Html ()
       title_ (toHtml $ title ++ " - 2019年 熊野寮入寮パンフレット")
+      meta_ [property_ "og:type",         content_ "website"]
+      meta_ [property_ "og:title",        content_ (T.pack $ title ++ " - 2019年 熊野寮入寮パンフレット")]
+      meta_ [property_ "og:description",  content_ (T.pack description)]
+      meta_ [property_ "og:url",          content_ "https://kumanoryo-pamphlet-2019.netlify.com/"]
     body_ $ do
       header_ $ do
         a_ [href_ "/", style_ "text-align: center;"] "2019年 熊野寮入寮パンフレット"
@@ -105,11 +112,11 @@ main = do
       let header:sections = splitSections chapter
       Right sectionHeader <- runIO . writeDoc $ Pandoc meta header
       let sectionBodies = indexHTML $ map (\s -> (sectionFileName chapter s, sectionTitle' s)) $ filter (isJust . sectionTitle) sections
-      writeFile' (chapterFileName chapter) . layoutHTML (chapterTitle chapter) $ sectionHeader <> sectionBodies
+      writeFile' (chapterFileName chapter) . layoutHTML (chapterTitle chapter) (T.unpack . T.take 200 $ sectionHeader) $ sectionHeader <> sectionBodies
       forM_ sections $ \section -> do
         Right txt <- runIO $ writeDoc (Pandoc meta section)
-        writeFile' (sectionFileName chapter section) $ layoutHTML (sectionTitle' section) txt
+        writeFile' (sectionFileName chapter section) $ layoutHTML (sectionTitle' section) (T.unpack . T.take 200 $ txt) txt
     else do
       Right txt <- runIO $ writeDoc (Pandoc meta chapter)
-      writeFile' (chapterFileName chapter) $ layoutHTML (chapterTitle chapter) txt
-  writeFile' "index.html" . layoutHTML "トップ" . indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
+      writeFile' (chapterFileName chapter) $ layoutHTML (chapterTitle chapter) (T.unpack . T.take 200 $ txt) txt
+  writeFile' "index.html" . layoutHTML "トップ" "2019年 熊野寮入寮パンフレット" . indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
