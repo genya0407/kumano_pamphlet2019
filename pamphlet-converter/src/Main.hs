@@ -3,12 +3,14 @@ module Main where
 
 import Text.Pandoc
 import Text.Pandoc.Definition
+import Text.Pandoc.Walk (walk)
 import qualified Data.Text.IO as T
 import qualified Data.Text as T
 import qualified Data.Text.Lazy as LT
 import Data.Maybe
 import Data.Either
 import Data.List
+import Data.List.Utils (replace)
 import Control.Monad
 import System.Environment (getArgs)
 import System.FilePath.Posix (joinPath, takeDirectory)
@@ -61,15 +63,17 @@ indexHTML subpages = T.pack . LT.unpack . renderText $
       forM_ subpages $ \(path, name) ->
         li_ $ a_ [href_ $ T.pack (joinPath ["/", path])] (toHtml name)
 
+doubleQuote (Str s) = Str (replace "``" "“" s)
+doubleQuote x = x
+
 main :: IO ()
 main = do
   outdir <- fmap (!! 0) getArgs
   let writeFile' fname txt = createDirectoryIfMissing True (takeDirectory path) >> T.writeFile path txt where path = joinPath [outdir, fname]
   txt <- T.getContents
-  Right pdc@(Pandoc meta ast) <- runIO $ readDoc txt
+  Right pdc@(Pandoc meta ast) <- fmap (walk doubleQuote) $ runIO $ readDoc txt
   let chapters = splitChapters ast
   forM_ chapters $ \chapter -> do
-    putStrLn $ chapterTitle chapter
     if "寮生の声" `isPrefixOf` chapterTitle chapter then do
       let header:sections = splitSections chapter
       Right sectionHeader <- runIO . writeDoc $ Pandoc meta header
