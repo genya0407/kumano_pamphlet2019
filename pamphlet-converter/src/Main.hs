@@ -75,7 +75,7 @@ layoutHTML content = T.pack . LT.unpack . renderText $
     body_ $ do
       header_ $ do
         a_ [href_ "/", style_ "text-align: center;"] "2019年 熊野寮入寮パンフレット"
-      div_ [id_ "content"] $ toHtmlRaw content
+      div_ [id_ "container"] . div_ [id_ "content"] $ toHtmlRaw content
 
 doubleQuote :: Inline -> Inline
 doubleQuote (Str s) = Str (replace "``" "“" s)
@@ -104,7 +104,7 @@ main = do
       let header:sections = splitSections chapter
       Right sectionHeader <- runIO . writeDoc $ Pandoc meta header
       let sectionBodies = indexHTML $ map (\s -> (sectionFileName chapter s, sectionTitle' s)) $ filter (isJust . sectionTitle) sections
-      writeFile' (chapterFileName chapter) $ sectionHeader <> sectionBodies
+      writeFile' (chapterFileName chapter) . layoutHTML $ sectionHeader <> sectionBodies
       forM_ sections $ \section -> do
         Right txt <- runIO $ writeDoc (Pandoc meta section)
         writeFile' (sectionFileName chapter section) $ layoutHTML txt

@@ -1,16 +1,54 @@
-div#content {
+body {
+    margin: 0px;
+}
+
+div#container {
     max-width: 800px;
     margin: auto;
+}
+
+div#content {
+    margin-left: 1em;
+    margin-right: 1em;
     font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
 }
 
 header {
     margin-top: 0px;
     margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
     height: 45px;
     font-size: 20px;
     text-align: center;
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.05);
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: sans-serif;
+}
+
+h2 {
+    padding: 0.25em 0.5em;
+    color: #494949;
+    background: transparent;
+    border-left: solid 5px #7db4e6;
+}
+
+h1 {
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px black;
+    border-radius: 3px 0 3px 0;
+}
+
+h3 {
+    border-bottom: solid 3px black;
 }
 
 header > a {
@@ -20,6 +58,10 @@ header > a {
 
 ul > li {
     margin-bottom: 0.5em;
+}
+
+ol {
+    padding-left: 1em;
 }
 
 dl > dt {
