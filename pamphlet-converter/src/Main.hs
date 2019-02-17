@@ -82,5 +82,3 @@ main = do
       Right txt <- runIO $ writeDoc (Pandoc meta chapter)
       writeFile' (chapterFileName chapter) txt
   writeFile' "index.html" . indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
-  --let chapterAnchor chapter = "<a href='./" <> chapterFileName chapter <> "'>" <> chapterTitle chapter <> "</a>"
-  --writeFile' "index.html" . T.pack . unlines $ map chapterAnchor chapters
