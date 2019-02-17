@@ -63,15 +63,27 @@ indexHTML subpages = T.pack . LT.unpack . renderText $
       forM_ subpages $ \(path, name) ->
         li_ $ a_ [href_ $ T.pack (joinPath ["/", path])] (toHtml name)
 
+doubleQuote :: Inline -> Inline
 doubleQuote (Str s) = Str (replace "``" "“" s)
 doubleQuote x = x
+renameFig :: Inline -> Inline
+renameFig (Image ("",[],[]) [Str "image"] (pdfname,"")) = Image ("",[],[]) [Str "image"] (pngname,"")
+        where pngname = "/images/" ++ pdfname ++ ".png" 
+renameFig x = x
+removeFig :: Inline -> Inline
+removeFig (Str ('[':'f':'i':'g':':':_)) = Space
+removeFig (Span ("",[],[]) [Str "r"]) = Space
+removeFig (Str "[10pt]") = Space
+removeFig (Str "[0pt]") = Space
+removeFig (Span ("",[],[]) [Str "0.5"]) = Space
+removeFig x = x
 
 main :: IO ()
 main = do
   outdir <- fmap (!! 0) getArgs
   let writeFile' fname txt = createDirectoryIfMissing True (takeDirectory path) >> T.writeFile path txt where path = joinPath [outdir, fname]
   txt <- T.getContents
-  Right pdc@(Pandoc meta ast) <- fmap (walk doubleQuote) $ runIO $ readDoc txt
+  Right pdc@(Pandoc meta ast) <- fmap (walk $ renameFig . removeFig . doubleQuote) $ runIO $ readDoc txt
   let chapters = splitChapters ast
   forM_ chapters $ \chapter -> do
     if "寮生の声" `isPrefixOf` chapterTitle chapter then do

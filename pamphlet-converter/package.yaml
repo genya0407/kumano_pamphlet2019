@@ -20,6 +20,8 @@ dependencies:
   - filepath
   - lucid
   - directory
+  - pandoc-types
+  - MissingH
 
 executables:
   pamphlet-converter:
