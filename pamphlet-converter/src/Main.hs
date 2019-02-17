@@ -63,6 +63,14 @@ indexHTML subpages = T.pack . LT.unpack . renderText $
       forM_ subpages $ \(path, name) ->
         li_ $ a_ [href_ $ T.pack (joinPath ["/", path])] (toHtml name)
 
+layoutHTML :: T.Text -> T.Text
+layoutHTML content = T.pack . LT.unpack . renderText $
+  doctypehtml_ $ do
+    head_ $ do
+      script_ [type_ "text/x-mathjax-config"] ("MathJax.Hub.Config({TeX: { equationNumbers: {autoNumber: 'all'} }, tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']]}});" :: T.Text)
+      script_ [src_ "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"] ("" :: T.Text) :: Html ()
+    body_ $ toHtmlRaw content
+
 doubleQuote :: Inline -> Inline
 doubleQuote (Str s) = Str (replace "``" "“" s)
 doubleQuote x = x
@@ -93,8 +101,8 @@ main = do
       writeFile' (chapterFileName chapter) $ sectionHeader <> sectionBodies
       forM_ sections $ \section -> do
         Right txt <- runIO $ writeDoc (Pandoc meta section)
-        writeFile' (sectionFileName chapter section) txt
+        writeFile' (sectionFileName chapter section) $ layoutHTML txt
     else do
       Right txt <- runIO $ writeDoc (Pandoc meta chapter)
-      writeFile' (chapterFileName chapter) txt
+      writeFile' (chapterFileName chapter) $ layoutHTML txt
   writeFile' "index.html" . indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
