@@ -63,8 +63,8 @@ indexHTML subpages = T.pack . LT.unpack . renderText $
       forM_ subpages $ \(path, name) ->
         li_ $ a_ [href_ $ T.pack (joinPath ["/", path])] (toHtml name)
 
-layoutHTML :: T.Text -> T.Text
-layoutHTML content = T.pack . LT.unpack . renderText $
+layoutHTML :: String -> T.Text -> T.Text
+layoutHTML title content = T.pack . LT.unpack . renderText $
   doctypehtml_ $ do
     head_ $ do
       meta_ [charset_ "utf-8"]
@@ -72,6 +72,7 @@ layoutHTML content = T.pack . LT.unpack . renderText $
       link_ [rel_ "stylesheet", href_ "/static/all.css"]
       script_ [type_ "text/x-mathjax-config"] ("MathJax.Hub.Config({TeX: { equationNumbers: {autoNumber: 'all'} }, tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']]}});" :: T.Text)
       script_ [src_ "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"] ("" :: T.Text) :: Html ()
+      title_ (toHtml $ title ++ " - 2019年 熊野寮入寮パンフレット")
     body_ $ do
       header_ $ do
         a_ [href_ "/", style_ "text-align: center;"] "2019年 熊野寮入寮パンフレット"
@@ -104,11 +105,11 @@ main = do
       let header:sections = splitSections chapter
       Right sectionHeader <- runIO . writeDoc $ Pandoc meta header
       let sectionBodies = indexHTML $ map (\s -> (sectionFileName chapter s, sectionTitle' s)) $ filter (isJust . sectionTitle) sections
-      writeFile' (chapterFileName chapter) . layoutHTML $ sectionHeader <> sectionBodies
+      writeFile' (chapterFileName chapter) . layoutHTML (chapterTitle chapter) $ sectionHeader <> sectionBodies
       forM_ sections $ \section -> do
         Right txt <- runIO $ writeDoc (Pandoc meta section)
-        writeFile' (sectionFileName chapter section) $ layoutHTML txt
+        writeFile' (sectionFileName chapter section) $ layoutHTML (sectionTitle' section) txt
     else do
       Right txt <- runIO $ writeDoc (Pandoc meta chapter)
-      writeFile' (chapterFileName chapter) $ layoutHTML txt
-  writeFile' "index.html" . layoutHTML . indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
+      writeFile' (chapterFileName chapter) $ layoutHTML (chapterTitle chapter) txt
+  writeFile' "index.html" . layoutHTML "トップ" . indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
