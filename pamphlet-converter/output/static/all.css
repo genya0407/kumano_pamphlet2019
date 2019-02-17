@@ -1,6 +1,7 @@
 div#content {
     max-width: 800px;
     margin: auto;
+    font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
 }
 
 header {
