@@ -31,6 +31,8 @@ spanWith cond list = reverse . map reverse $ _spanWith cond list []
                                         then _spanWith _cond xs ([x]:curr:acc)
                                         else _spanWith _cond xs ((x:curr):acc)
 
+toLink path = joinPath ["/", path]
+
 splitChapters :: [Block] -> [[Block]]
 splitChapters = spanWith isChapter
   where
@@ -57,12 +59,16 @@ sectionFileName chapter section = joinPath ["chapters/", chapterTitle chapter , 
 readDoc = readLaTeX def
 writeDoc = writeHtml5String def
 
+breadcrumbHTML [(path, name)]    = makeLink path name
+breadcrumbHTML ((path, name):xs) = makeLink path name <> " >> " <> breadcrumbHTML xs
+makeLink path name = T.pack . LT.unpack . renderText $ a_ [href_ $ T.pack (toLink path)] (toHtml name)    
+
 indexHTML :: [(String, String)] -> T.Text
 indexHTML subpages = T.pack . LT.unpack . renderText $
   div_ $
     ul_ $
       forM_ subpages $ \(path, name) ->
-        li_ $ a_ [href_ $ T.pack (joinPath ["/", path])] (toHtml name)
+        li_ $ a_ [href_ $ T.pack (toLink path)] (toHtml name)
 
 property_ = makeAttribute "property"
 
@@ -75,6 +81,8 @@ layoutHTML title description content = T.pack . LT.unpack . renderText $
       link_ [rel_ "stylesheet", href_ "/static/all.css"]
       script_ [type_ "text/x-mathjax-config"] ("MathJax.Hub.Config({TeX: { equationNumbers: {autoNumber: 'all'} }, tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']]}});" :: T.Text)
       script_ [src_ "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"] ("" :: T.Text) :: Html ()
+      script_ [src_ "https://www.googletagmanager.com/gtag/js?id=UA-129416983-2"] ("" :: T.Text)
+      script_ "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}; gtag('js', new Date());gtag('config', 'UA-129416983-2');"
       title_ (toHtml $ title ++ " - 2019年 熊野寮入寮パンフレット")
       meta_ [property_ "og:type",         content_ "website"]
       meta_ [property_ "og:title",        content_ (T.pack $ title ++ " - 2019年 熊野寮入寮パンフレット")]
@@ -109,17 +117,19 @@ main = do
   Right pdc@(Pandoc meta ast) <- fmap (walk $ renameFig . removeFig . doubleQuote) $ runIO $ readDoc txt
   let header:chapters = splitChapters ast
   forM_ chapters $ \chapter -> do
+    let chapterBreadcrumb = [("/", "トップ"), (toLink $ chapterFileName chapter, chapterTitle chapter)]
     if chapterTitle chapter `elem` ["寮生の声", "寮生の声 —過去の傑作選", "寮生の生態", "寮での生活"] then do
       let header:sections = splitSections chapter
       Right sectionHeader <- runIO . writeDoc $ Pandoc meta header
       let sectionBodies = indexHTML $ map (\s -> (sectionFileName chapter s, sectionTitle' s)) $ filter (isJust . sectionTitle) sections
-      writeFile' (chapterFileName chapter) . layoutHTML (chapterTitle chapter) (T.unpack . T.take 200 $ sectionHeader) $ sectionHeader <> sectionBodies
+      writeFile' (chapterFileName chapter) . layoutHTML (chapterTitle chapter) (T.unpack . T.take 200 $ sectionHeader) $ breadcrumbHTML chapterBreadcrumb <> sectionHeader <> sectionBodies
       forM_ sections $ \section -> do
+        let sectionBreadcrumb = chapterBreadcrumb ++ [(sectionFileName chapter section, sectionTitle' section)]
         Right txt <- runIO $ writeDoc (Pandoc meta section)
-        writeFile' (sectionFileName chapter section) $ layoutHTML (sectionTitle' section) (T.unpack . T.take 200 $ txt) txt
+        writeFile' (sectionFileName chapter section) $ layoutHTML (sectionTitle' section) (T.unpack . T.take 200 $ txt) $ breadcrumbHTML sectionBreadcrumb <> txt
     else do
       Right txt <- runIO $ writeDoc (Pandoc meta chapter)
-      writeFile' (chapterFileName chapter) $ layoutHTML (chapterTitle chapter) (T.unpack . T.take 200 $ txt) txt
+      writeFile' (chapterFileName chapter) $ layoutHTML (chapterTitle chapter) (T.unpack . T.take 200 $ txt) $ breadcrumbHTML chapterBreadcrumb <> txt
   Right chapterHeader <- runIO . writeDoc $ Pandoc meta header
   let chapterBodies = indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
   writeFile' "index.html" . layoutHTML "トップ" "2019年 熊野寮入寮パンフレット" $ chapterHeader <> chapterBodies
