@@ -89,8 +89,9 @@ doubleQuote :: Inline -> Inline
 doubleQuote (Str s) = Str (replace "``" "“" s)
 doubleQuote x = x
 renameFig :: Inline -> Inline
-renameFig (Image ("",[],[]) [Str "image"] (pdfname,"")) = Image ("",[],[]) [Str "image"] (pngname,"")
-        where pngname = "/images/" ++ pdfname ++ ".png" 
+renameFig (Image ("",[],[]) [Str "image"] (fname,""))
+    | ".pdf" `isSuffixOf` fname = Image ("",[],[]) [Str "image"] ("/images/" ++ fname ++ ".jpg" ,"")
+    | otherwise = (Image ("",[],[]) [Str "image"] (fname,""))
 renameFig x = x
 removeFig :: Inline -> Inline
 removeFig (Str ('[':'f':'i':'g':':':_)) = Space
@@ -106,9 +107,9 @@ main = do
   let writeFile' fname txt = createDirectoryIfMissing True (takeDirectory path) >> T.writeFile path txt where path = joinPath [outdir, fname]
   txt <- T.getContents
   Right pdc@(Pandoc meta ast) <- fmap (walk $ renameFig . removeFig . doubleQuote) $ runIO $ readDoc txt
-  let chapters = splitChapters ast
+  let header:chapters = splitChapters ast
   forM_ chapters $ \chapter -> do
-    if "寮生の声" `isPrefixOf` chapterTitle chapter then do
+    if chapterTitle chapter `elem` ["寮生の声", "寮生の声 —過去の傑作選", "寮生の生態", "寮での生活"] then do
       let header:sections = splitSections chapter
       Right sectionHeader <- runIO . writeDoc $ Pandoc meta header
       let sectionBodies = indexHTML $ map (\s -> (sectionFileName chapter s, sectionTitle' s)) $ filter (isJust . sectionTitle) sections
@@ -119,4 +120,6 @@ main = do
     else do
       Right txt <- runIO $ writeDoc (Pandoc meta chapter)
       writeFile' (chapterFileName chapter) $ layoutHTML (chapterTitle chapter) (T.unpack . T.take 200 $ txt) txt
-  writeFile' "index.html" . layoutHTML "トップ" "2019年 熊野寮入寮パンフレット" . indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
+  Right chapterHeader <- runIO . writeDoc $ Pandoc meta header
+  let chapterBodies = indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
+  writeFile' "index.html" . layoutHTML "トップ" "2019年 熊野寮入寮パンフレット" $ chapterHeader <> chapterBodies

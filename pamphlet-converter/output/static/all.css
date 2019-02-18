@@ -1,5 +1,11 @@
 body {
     margin: 0px;
+    margin-bottom: 50px;
+}
+
+li > a {
+    font-size: large;
+    color: black;
 }
 
 div#container {
