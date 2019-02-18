@@ -99,7 +99,7 @@ doubleQuote x = x
 renameFig :: Inline -> Inline
 renameFig (Image ("",[],[]) [Str "image"] (fname,""))
     | ".pdf" `isSuffixOf` fname = Image ("",[],[]) [Str "image"] ("/images/" ++ fname ++ ".jpg" ,"")
-    | otherwise = (Image ("",[],[]) [Str "image"] (fname,""))
+    | otherwise = Image ("",[],[]) [Str "image"] (fname,"")
 renameFig x = x
 removeFig :: Inline -> Inline
 removeFig (Str ('[':'f':'i':'g':':':_)) = Space
