@@ -63,12 +63,15 @@ breadcrumbHTML [(path, name)]    = makeLink path name
 breadcrumbHTML ((path, name):xs) = makeLink path name <> " >> " <> breadcrumbHTML xs
 makeLink path name = T.pack . LT.unpack . renderText $ a_ [href_ $ T.pack (toLink path)] (toHtml name)    
 
-indexHTML :: [(String, String)] -> T.Text
+indexHTML :: [(String, String, Maybe [(String, String)])] -> T.Text
 indexHTML subpages = T.pack . LT.unpack . renderText $
   div_ $
     ul_ $
-      forM_ subpages $ \(path, name) ->
+      forM_ subpages $ \(path, name, subsubpagesMaybe) -> do
         li_ $ a_ [href_ $ T.pack (toLink path)] (toHtml name)
+        case subsubpagesMaybe of
+          Just subsubpages -> ul_ $ forM_ subsubpages $ \(path, name) -> (li_ $ a_ [href_ $ T.pack (toLink path)] (toHtml name))
+          Nothing -> return ()
 
 property_ = makeAttribute "property"
 
@@ -109,8 +112,13 @@ removeFig (Str "[0pt]") = Space
 removeFig (Span ("",[],[]) [Str "0.5"]) = Space
 removeFig x = x
 
+sectionsOfChapter chapter = map (\section -> (sectionFileName chapter section, sectionTitle' section)) sections
+    where
+        _:sections = splitSections chapter
+
 main :: IO ()
 main = do
+  let chaptersWithSections = ["寮生の声", "寮生の声 —過去の傑作選", "寮生の生態", "寮での生活"]
   outdir <- fmap (!! 0) getArgs
   let writeFile' fname txt = createDirectoryIfMissing True (takeDirectory path) >> T.writeFile path txt where path = joinPath [outdir, fname]
   txt <- T.getContents
@@ -118,10 +126,10 @@ main = do
   let header:chapters = splitChapters ast
   forM_ chapters $ \chapter -> do
     let chapterBreadcrumb = [("/", "トップ"), (toLink $ chapterFileName chapter, chapterTitle chapter)]
-    if chapterTitle chapter `elem` ["寮生の声", "寮生の声 —過去の傑作選", "寮生の生態", "寮での生活"] then do
+    if chapterTitle chapter `elem` chaptersWithSections then do
       let header:sections = splitSections chapter
       Right sectionHeader <- runIO . writeDoc $ Pandoc meta header
-      let sectionBodies = indexHTML $ map (\s -> (sectionFileName chapter s, sectionTitle' s)) $ filter (isJust . sectionTitle) sections
+      let sectionBodies = indexHTML $ map (\s -> (sectionFileName chapter s, sectionTitle' s, Nothing)) $ filter (isJust . sectionTitle) sections
       writeFile' (chapterFileName chapter) . layoutHTML (chapterTitle chapter) (T.unpack . T.take 200 $ sectionHeader) $ breadcrumbHTML chapterBreadcrumb <> sectionHeader <> sectionBodies
       forM_ sections $ \section -> do
         let sectionBreadcrumb = chapterBreadcrumb ++ [(sectionFileName chapter section, sectionTitle' section)]
@@ -131,5 +139,5 @@ main = do
       Right txt <- runIO $ writeDoc (Pandoc meta chapter)
       writeFile' (chapterFileName chapter) $ layoutHTML (chapterTitle chapter) (T.unpack . T.take 200 $ txt) $ breadcrumbHTML chapterBreadcrumb <> txt
   Right chapterHeader <- runIO . writeDoc $ Pandoc meta header
-  let chapterBodies = indexHTML $ map (\c -> (chapterFileName c, chapterTitle c)) chapters
+  let chapterBodies = indexHTML $ map (\c -> (chapterFileName c, chapterTitle c, if (chapterTitle c) `elem` chaptersWithSections then Just (sectionsOfChapter c) else Nothing)) chapters
   writeFile' "index.html" . layoutHTML "トップ" "2019年 熊野寮入寮パンフレット" $ chapterHeader <> chapterBodies
