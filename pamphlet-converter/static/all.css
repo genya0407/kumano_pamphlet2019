@@ -66,6 +66,10 @@ ul > li {
     margin-bottom: 0.5em;
 }
 
+ul > ul {
+    padding-left: 1em;
+}
+
 ol {
     padding-left: 1em;
 }

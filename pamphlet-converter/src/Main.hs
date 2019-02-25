@@ -86,6 +86,11 @@ layoutHTML title description content = T.pack . LT.unpack . renderText $
       script_ [src_ "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"] ("" :: T.Text) :: Html ()
       script_ [src_ "https://www.googletagmanager.com/gtag/js?id=UA-129416983-2"] ("" :: T.Text)
       script_ "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}; gtag('js', new Date());gtag('config', 'UA-129416983-2');"
+      script_ [
+        src_ "https://code.jquery.com/jquery-3.3.1.min.js",
+        integrity_ "sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=",
+        crossorigin_ "anonymous"] ("" :: T.Text)
+      script_ [src_ "/static/slide.js"] ("" :: T.Text)
       title_ (toHtml $ title ++ " - 2019年 熊野寮入寮パンフレット")
       meta_ [property_ "og:type",         content_ "website"]
       meta_ [property_ "og:title",        content_ (T.pack $ title ++ " - 2019年 熊野寮入寮パンフレット")]
